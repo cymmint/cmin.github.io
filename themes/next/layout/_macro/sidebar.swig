@@ -29,10 +29,10 @@
                src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
                alt="{{ theme.author }}" />
           <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
-          <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
+          <p class="site-description motion-element" itemprop="motto">{{ theme.motto }}</p>
         </div>
         <nav class="site-state motion-element">
-        
+
           {% if config.archive_dir != '/' %}
             <div class="site-state-item site-state-posts">
               <a href="{{ url_for(theme.menu.archives) }}">

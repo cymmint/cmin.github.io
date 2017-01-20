@@ -5,15 +5,16 @@
 # Site 网站
 title: 摘星少年   #网站标题
 subtitle:   #网站副标题
-description: 清醒时做事，糊涂时读书；<br>大怒时睡觉，独处时思考。   #网站描述
-author: cmin
+description: 摘星少年的个人前端博客，专注分享web前端开发技术，个人原创博客 #网站描述
+motto: 清醒时做事，糊涂时读书；<br>大怒时睡觉，独处时思考。 #座右铭
+author: 摘星少年_cmin
 language: zh-Hans
 timezone:           #网站时区。Hexo 默认使用您电脑的时区
 
 # URL 网址
 ## 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，则请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
 url: http://cmin.me
-permalink: :year/:month/:day/:title/    #生成文件名字的格式我改成blog/:title:year:month:day/
+permalink: /blog/:year-:month/:title/    #生成文件名字的格式我改成blog/:title:year:month:day/
 permalink_defaults:
 
 # Directory 目录配置
