@@ -92,4 +92,4 @@ search:
 deploy:
   type: git
   repo:
-    github: https://github.com/cymmint/cymmint.github.io.git
+    github: git@github.com:cymmint/cymmint.github.io.git
