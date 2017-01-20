@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico  #站标  可以放在hexo文件夹下的/source里
+favicon: /imgs/favicon.ico  #站标  可以放在hexo文件夹下的/source里
 
 # Set default keywords (Use a comma to separate)
 keywords: "bolg, 博客, WEB, 前端, HTML5, HTML, CSS, CSS3, JS, jquery, javascript, LESS"  #网站关键字
@@ -84,7 +84,7 @@ scheme: Pisces
 # - Introduce in 5.0.1
 # ---------------------------------------------------------------
 font:
-  enable: true
+  enable: false
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
   host: //fonts.useso.com
@@ -146,7 +146,7 @@ font:
 #   Key is the name of the item and value is the name of FontAwsome icon. Key is case-senstive.
 #   When an globe mask icon presenting up means that the item has no mapping icon.
 social_icons: #社交链接
-  enable: true
+  enable: false
   # Icon Mappings.
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
@@ -197,6 +197,7 @@ links_layout: inline
 #links_layout: block
 links:
   半步多: https://jadyer.github.io/
+  豪哥: https://holtyin.github.io/
 
 
 # ---------------------------------------------------------------
@@ -212,7 +213,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommand.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
+  enable: false
   length: 500
 
 # Post meta display settings

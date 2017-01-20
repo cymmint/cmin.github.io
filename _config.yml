@@ -14,7 +14,7 @@ timezone:           #网站时区。Hexo 默认使用您电脑的时区
 # URL 网址
 ## 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，则请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
 url: http://cmin.me
-permalink: /blog/:year-:month/:title/    #生成文件名字的格式我改成blog/:title:year:month:day/
+permalink: /blog/:year-:month/:title/    #生成文件名字的格式我改成 blog/:title:year:month:day/
 permalink_defaults:
 
 # Directory 目录配置
@@ -25,7 +25,12 @@ archive_dir: archives   #归档文件夹
 category_dir: categories   #分类文件夹
 code_dir: downloads/code    #nclude code 文件夹
 i18n_dir: :lang   #国际化（i18n）文件夹
-skip_render:   #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。
+skip_render: [examples/*, examples/**/*] #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。
+#此处的位置是相对于你的source_dir的位置，一般来说，就是以source为根的位置
+#这里的文件匹配是基于正则的，大致上可以参考这个)，也就是说*.html可以忽略所有html文档，hello-wordl.md的话，就能忽略掉名字为hello-wordl.md的文件
+#使用[examples/*, examples/**/*]这个组合可以跳过mahua目录下所有文件以及子目录内的文档（两层）
+#导致生成失败的是一个特别大的js文件，worker-xquery.js，1012KB，删掉这货之后就成功了。
+#参考：https://github.com/hexojs/hexo/issues/1333#issuecomment-111217533
 
 # Writing 文章
 new_post_name: :title.md   # 新建文章默认文件名

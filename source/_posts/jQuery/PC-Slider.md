@@ -1,7 +1,7 @@
 ---
-title: cmin-Slider 焦点图切换插件
+title: Slider焦点图切换插件
 date: 2015-01-06 11:36:26
-tags: [JS, jQuery, Slider, 焦点图]
+tags: [JS, jQuery, Slider]
 categories: [jQuery]
 description: Slider是基本jQuery的Banner(焦点图)切换插件
 ---
@@ -13,15 +13,11 @@ cmin-Slider是基本jQuery的Banner(焦点图)切换插件，于2015年一次项
 ### 可设置参数
 - 是否显示左右切换按钮、是否始终显示按钮
 - 是否显示Dot，Dot背景条，Dot序号
-- 首次显示等几张banner
+- 首次显示第几张banner
 - 是否自动切换，自动切换间隔时间
 - 两种切换效果[fade, slide]，及效果过渡时间
 - 切换完成后，回调方法
 - 其它样式（如宽度，位置等），可直接通过CSS设置
-
-
-### 目录说明
-根目录下的Develop文件夹是开发源文件，Build是项目中使用文件
 
 
 ### 引用文件
@@ -68,6 +64,9 @@ $(".fs-wrap").CSlider({
     }
 });
 ```
+
+### TEST
+{% iframe /examples/jQuery/PC-Slider/index.html 600 280 %}
 
 
 ### 运行效果

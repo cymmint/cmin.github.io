@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Focus</title>
+<meta charset="utf-8">
+<!-- build:css css/slider.min.css -->
+<link rel="stylesheet" href="css/slider.css">
+<!-- endbuild -->
+</head>
+
+<body class="bd-gray">
+
+<!--Banner-->
+<div class="fs-wrap">
+    <div class="fs-img">
+        <a style="background-image:url(/images/blog/600-280/1.jpg)"></a>
+        <a style="background-image:url(/images/blog/600-280/2.jpg)"></a>
+        <a style="background-image:url(/images/blog/600-280/3.jpg)"></a>
+    </div>
+</div>
+<div class="clear"></div>
+
+<script src="/lib/jquery/index.js"></script>
+<!-- build:js js/slider.min.js -->
+<script src="js/slider.js"></script>
+<!-- endbuild -->
+<script>
+$(function () {
+    //Call
+    $(".fs-wrap").CSlider({
+        effect: "fade",
+        isDotNum: true,
+        isPNOpen: true,
+        callback: function () { //切换完成后回调
+            console.log(this);
+        }
+    });
+});
+</script>
+</body>
+</html>
