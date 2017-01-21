@@ -1,11 +1,24 @@
 {
-  "name": "摘星少年",
-  "version": "1.0.0",
+  "name": "cmin-blog",
+  "version": "1.0.1",
   "private": true,
+  "repository": "public/",
+  "author": "cmin",
+  "hostname": "http://cmin.me/",
+  "description": "摘星少年个人博客。",
+  "license": "",
   "hexo": {
     "version": "3.2.2"
   },
   "dependencies": {
+    "autoprefixer": "^6.6.1",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.1.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
     "hexo": "^3.2.0",
     "hexo-deployer-git": "^0.2.0",
     "hexo-generator-archive": "^0.1.4",

@@ -7,7 +7,7 @@ description: Slider是基本jQuery的Banner(焦点图)切换插件
 ---
 
 ### 关于Slider
-cmin-Slider是基本jQuery的Banner(焦点图)切换插件，于2015年一次项目需要开发的，后经过多次优化和扩展，当前最新版本V2.1.1
+> Slider是基本jQuery的Banner(焦点图)切换插件，于2015年一次项目需要开发的，后经过多次优化和扩展，当前最新版本V2.1.1。
 
 
 ### 可设置参数
@@ -18,29 +18,33 @@ cmin-Slider是基本jQuery的Banner(焦点图)切换插件，于2015年一次项
 - 两种切换效果[fade, slide]，及效果过渡时间
 - 切换完成后，回调方法
 - 其它样式（如宽度，位置等），可直接通过CSS设置
+<!-- more -->
+
+### 源文件下载
+#### 本地
+- [JS](/examples/jQuery/PC-Slider/js/slider.js)
+- [CSS](/examples/jQuery/PC-Slider/css/slider.css)
+- [LESS](/examples/jQuery/PC-Slider/css/slider.less) （提供LESS预处理语言版本，其它CSS预处理需自行转换）
+
+#### Coding.net
+- [Slider](https://coding.net/u/cymmint/p/cmin-Slider)
 
 
-### 引用文件
-#### HTML
+### 引用方法
 ``` html
-<div class="fs-wrap">
-    <div class="fs-img">
-        <a style="background-image:url(images/b1.jpg)"></a>
-        <a style="background-image:url(images/b2.jpg)"></a>
-        <a style="background-image:url(images/b3.jpg)"></a>
-    </div>
-</div>
-```
-
-#### CSS文件
-``` html
+<!--在head标签内添加:-->
 <link rel="stylesheet" href="css/slider.min.css">
-```
-
-#### JS文件
-``` html
 <script src="js/jquery.min.js"></script>
 <script src="js/slider.min.js"></script>
+
+<!--在body标签内添加:-->
+<div class="fs-wrap">
+    <div class="fs-img">
+        <a style="background-image:url(images/1.jpg)"></a>
+        <a style="background-image:url(images/2.jpg)"></a>
+        <a style="background-image:url(images/3.jpg)"></a>
+    </div>
+</div>
 ```
 
 
@@ -65,15 +69,12 @@ $(".fs-wrap").CSlider({
 });
 ```
 
-### TEST
-{% iframe /examples/jQuery/PC-Slider/index.html 600 280 %}
-
 
 ### 运行效果
-[Build demo](http://cymmint.coding.me/cmin-Slider/Build/slider.html)
+{% iframe /examples/jQuery/PC-Slider/index.html 100% 562 %}
 
 
-### 更新历史
+### 更新记录
 - 2.1.1 添加isPNOpen参数，设置左右Button是否一直显示 [2017-01-09]
 - 2.1.0 优化了参数名称及已知BUG [2017-01-07]
 - 2.0.0 新增两种切换效果模式，删除JS里设置CSS [2017-01-04]

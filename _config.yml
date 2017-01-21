@@ -5,6 +5,7 @@
 # Site 网站
 title: 摘星少年   #网站标题
 subtitle:   #网站副标题
+keywords: "bolg, 博客, WEB, 前端, HTML5, HTML, CSS, CSS3, JS, jquery, javascript, LESS"  #网站关键字
 description: 摘星少年的个人前端博客，专注分享web前端开发技术，个人原创博客 #网站描述
 motto: 清醒时做事，糊涂时读书；<br>大怒时睡觉，独处时思考。 #座右铭
 author: 摘星少年_cmin
@@ -37,7 +38,7 @@ new_post_name: :title.md   # 新建文章默认文件名
 default_layout: post   # 默认布局
 titlecase: false   # Transform title into titlecase
 external_link: true   # 在新标签中打开一个外部链接，默认为true
-filename_case: 0   #转换文件名，1代表小写；2代表大写；默认为0，意思就是创建文章的时候，是否自动帮你转换文件名，默认就行，意义不大。
+filename_case: 1   #转换文件名，1代表小写；2代表大写；默认为0，意思就是创建文章的时候，是否自动帮你转换文件名，默认就行，意义不大。
 render_drafts: false   #是否渲染_drafts目录下的文章，默认为false
 post_asset_folder: false   #启动 Asset 文件夹
 relative_link: false   #把链接改为与根目录的相对位址，默认false
@@ -77,10 +78,11 @@ feed:
 # 多说
 duoshuo_shortname: cmin #评论
 duoshuo_hotartical: true #热评文章 true 或者 false
-duoshuo_share: true #分享服务
+duoshuo_share: false #分享服务
 
 # 百度统计
-baidu_analytics: d4f506cb1cf77dc05bda61962ec07088
+baidu_analytics: d4f506cb1cf77dc05bda61962ec07088 #统计
+baidushare: true #分享
 
 # Swiftype搜索
 swiftype_key:

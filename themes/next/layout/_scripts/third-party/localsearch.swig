@@ -11,7 +11,7 @@
     // monitor main search box;
 
     function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $("body").append('<div class="popoverlay">').css({'overflow': 'hidden', 'paddingRight': '17px'});
       $('.popup').toggle();
     }
     // search function;
@@ -105,6 +105,7 @@
 
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
+      console.log("cymint search")
       e.stopPropagation();
       if (isfetched == false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
@@ -116,7 +117,7 @@
     $('.popup-btn-close').click(function(e){
       $('.popup').hide();
       $(".popoverlay").remove();
-      $('body').css('overflow', '');
+      $('body').css({'overflow': '', 'paddingRight': ''});
     });
     $('.popup').click(function(e){
       e.stopPropagation();

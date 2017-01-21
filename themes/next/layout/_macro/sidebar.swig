@@ -62,12 +62,18 @@
 
         </nav>
 
-        {% if theme.rss %}
+        {% if theme.rss || theme.mail %}
           <div class="feed-link motion-element">
-            <a href="{{ url_for(theme.rss) }}" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+            {% if theme.rss%}
+              <a href="{{ url_for(theme.rss) }}" rel="alternate">
+                <i class="fa fa-rss"></i> RSS
+              </a>
+            {% endif %}
+            {% if theme.mail%}
+              <a href="mailto:{{ theme.mail }}" rel="alternate">
+                <i class="fa fa-send-o"></i> MAIL
+              </a>
+            {% endif %}
           </div>
         {% endif %}
 

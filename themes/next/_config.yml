@@ -12,6 +12,9 @@ keywords: "bolg, 博客, WEB, 前端, HTML5, HTML, CSS, CSS3, JS, jquery, javasc
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
 rss:  #rss这里不设置 引文站点配置文件已经配置了 需要安装插件
+mail: cymmint@qq.com #邮箱地址
+
+
 
 # Specify the date when the site was setup
 since: 2015 #网站时间 从xx开始 类似 1990-2016
@@ -20,7 +23,7 @@ since: 2015 #网站时间 从xx开始 类似 1990-2016
 authoricon: heart
 
 # Footer `powered-by` and `theme-info` copyright
-copyright: true
+copyright: false
 
 # Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
@@ -138,6 +141,7 @@ font:
   #微博: http://weibo.com/your-user-name
   #豆瓣: http://douban.com/people/your-user-name
   #知乎: http://www.zhihu.com/people/your-user-name
+  #邮箱: cymmint@qq.com
 
 
 # Social Links Icons
@@ -145,13 +149,14 @@ font:
 #   Map a menu item to a specific FontAwesome icon name.
 #   Key is the name of the item and value is the name of FontAwsome icon. Key is case-senstive.
 #   When an globe mask icon presenting up means that the item has no mapping icon.
-social_icons: #社交链接
+social_icons: #社交链接-icon
   enable: false
   # Icon Mappings.
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  #GitHub: github
+  #Twitter: twitter
+  #Weibo: weibo
+  邮箱: send-o
 
 
 # Sidebar Avatar
@@ -208,11 +213,11 @@ links:
 scroll_to_more: true
 
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
+excerpt_description: false #是否显示摘要
 
 # Automatically Excerpt. Not recommand.
 # Please use <!-- more --> in the post to control excerpt accurately.
-auto_excerpt:
+auto_excerpt: #首页博客显示文字字数
   enable: false
   length: 500
 
@@ -290,7 +295,7 @@ mathjax:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
+baidushare: true
 ##  type: button
 
 # Share
