@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /imgs/favicon.ico  #站标  可以放在hexo文件夹下的/source里
+favicon: /images/favicon.ico  #站标  可以放在hexo文件夹下的/source里
 
 # Set default keywords (Use a comma to separate)
 keywords: "bolg, 博客, WEB, 前端, HTML5, HTML, CSS, CSS3, JS, jquery, javascript, LESS"  #网站关键字

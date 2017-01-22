@@ -66,6 +66,8 @@ time_format: HH:mm:ss
 per_page: 10   #每页显示的文章量 (0 = 关闭分页功能)
 pagination_dir: page   #分页目录
 
+# 自动生成sitemap
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -73,7 +75,10 @@ theme: next
 feed:
   type: atom       #feed 类型 (atom/rss2)
   path: atom.xml   #rss 路径
-  limit: 20        #在 rss 中最多生成的文章数(0显示所有)
+  limit: 10        #在 rss 中最多生成的文章数(0显示所有)
+# 首页要安装 hexo-generator-sitemap
+sitemap:
+  path: sitemap.xml
 
 # 多说
 duoshuo_shortname: cmin #评论
@@ -101,3 +106,4 @@ deploy:
   type: git
   repo:
     github: git@github.com:cymmint/cymmint.github.io.git
+    coding: git@git.coding.net:cymmint/cymmint.git

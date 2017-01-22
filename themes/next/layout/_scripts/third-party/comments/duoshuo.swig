@@ -9,13 +9,7 @@
   <script type="text/javascript">
     var duoshuoQuery = {short_name:"{{duoshuo_shortname}}"};
     (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//ok4k2lt9z.bkt.clouddn.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementById('footer')
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
+      var ds = document.createElement('script');ds.type = 'text/javascript';ds.async = true;ds.id = 'duoshuo-script';ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//ok4k2lt9z.bkt.clouddn.com/qn-embed.js?v=1.0';ds.charset = 'UTF-8';(document.getElementById('footer') || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
   </script>
 

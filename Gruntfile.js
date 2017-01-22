@@ -138,7 +138,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= pkg.repository %>',
                     dest: '<%= pkg.repository %>',
-                    src: ['**/*.{html}']
+                    src: ['**/*.html']
                 }]
             }
         }
