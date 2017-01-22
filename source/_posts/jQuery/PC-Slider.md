@@ -1,13 +1,16 @@
 ---
 title: Slider焦点图切换插件
 date: 2015-01-06 11:36:26
-tags: [JS, jQuery, Slider]
+tags: [Slider]
+top: 10
 categories: [jQuery]
 description: Slider是基本jQuery的Banner(焦点图)切换插件
 ---
 
 ### 关于Slider
 > Slider是基本jQuery的Banner(焦点图)切换插件，于2015年一次项目需要开发的，后经过多次优化和扩展，当前最新版本V2.1.1。
+
+<!-- more -->
 
 
 ### 可设置参数
@@ -18,9 +21,6 @@ description: Slider是基本jQuery的Banner(焦点图)切换插件
 - 两种切换效果[fade, slide]，及效果过渡时间
 - 切换完成后，回调方法
 - 其它样式（如宽度，位置等），可直接通过CSS设置
-
-
-<!-- more -->
 
 
 ### 源文件下载

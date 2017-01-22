@@ -83,7 +83,7 @@ sitemap:
 # 多说
 duoshuo_shortname: cmin #评论
 duoshuo_hotartical: true #热评文章 true 或者 false
-duoshuo_share: false #分享服务
+#duoshuo_share: false #分享服务
 
 # 百度统计
 baidu_analytics: d4f506cb1cf77dc05bda61962ec07088 #统计
@@ -98,7 +98,7 @@ search:
   path: search.xml
   field: post
   format: html
-  limit: 10000
+  limit: 1000
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
