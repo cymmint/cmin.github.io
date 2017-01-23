@@ -2,7 +2,7 @@
 title: 常用小样式集合
 date: 2015-01-04 15:30:00
 top: 0
-tags: [常用]
+tags: [CSS属性]
 categories: [CSS]
 description: CSS常用小样式集合
 ---
@@ -16,6 +16,8 @@ description: CSS常用小样式集合
 .p2 { width:150px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 ```
 
+<!-- more -->
+
 
 ### CSS3 Loading 效果
 ``` css 需要一张png图片
@@ -25,8 +27,6 @@ description: CSS常用小样式集合
     to   { -webkit-transform:rotate(360deg);}
 }
 ```
-
-<!-- more -->
 
 
 ### 设置 placeholder 属性提示文字颜色
@@ -60,9 +60,33 @@ p { word-break:break-all;} /* 强制英文单词断行 */
 ```
 
 
-### BOX内容垂直居中
+### DIV内容垂直居中
 ``` css
 box-middle { display:-webkit-box; display:-ms-flexbox; display:-webkit-flex; display:flex; -webkit-box-pack:center; -ms-flex-pack:center; -webkit-justify-content:center; justify-content:center; -webkit-box-align:center; -ms-flex-align:center; -webkit-align-items:center; align-items:center;}
+```
+
+
+### 弹框浏览器窗口居中显示
+``` css
+.message {
+    position:fixed!important;
+    position:absolute;/*IE6*/
+    z-index:9;
+    left:50%;
+    top:50%;
+    width:400px;
+    height:300px;
+    background:#ddd;
+    overflow:hidden;
+    margin-top:0px;
+    margin-left:-200px!important; /*宽的1/2 */
+    margin-top:-150px!important; /*高的1/2*/
+    _top:expression(eval(document.compatMode &&
+         document.compatMode=='CSS1Compat') ?
+         documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+         document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+
+}
 ```
 
 
@@ -107,6 +131,15 @@ select::-ms-expand { background:none; border:none; color:rgba(255,255,255,0);} /
 .t2 { position:relative; width:206px; height:147px; }
 .t2 .light { position:absolute; left:-90px; top:0; width:50%; height:100%; background-image:-webkit-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); background-color:red; -webkit-transform:skewx(-25deg); -webkit-transition:0s; }
 .t2:hover .light { left:160px; -webkit-transition:0.5s; }
+```
+
+
+### 固定头部条（兼容IE）
+``` css
+.topBar { position:fixed; z-index:101; overflow:hidden; width:100%; height:44px; left:0; top:0; background:url(images/topBarMC.png) repeat-x;}
+* html,
+* html body { _background:url(about:blank) fixed;}
+* html .topBar { _position:absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop));}
 ```
 
 
@@ -180,13 +213,6 @@ p:first-child { }  /*选择属于父元素的第一个子元素的每个 <p> 元
 ```
 
 
-
-### 位置固定（兼容IE）
-``` css
-.headFixed { position:fixed !important; position:absolute; z-index:19; left:0; top:0; box-shadow:0 2px 3px rgba(51, 51, 51, 0.1); background:rgba(255, 255, 255, 0.95); _top:expression(eval(document.documentElement.scrollTop)); }
-```
-
-
 ### 折角效果
 ``` css
 .note { position:relative; background:linear-gradient(-150deg, transparent 1.5em, #fff 0);}
@@ -204,15 +230,6 @@ background-repeat: repeat-x;
 background-size: .2em .1em;
 text-shadow: .05em 0 white, -.05em 0 white;
 }
-```
-
-
-### 固定头部条
-``` css
-.topBar { position:fixed; z-index:101; overflow:hidden; width:100%; height:44px; left:0; top:0; background:url(images/topBarMC.png) repeat-x;}
-* html,
-* html body { _background:url(about:blank) fixed;}
-* html .topBar { _position:absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop));}
 ```
 
 

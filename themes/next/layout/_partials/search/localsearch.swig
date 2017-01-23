@@ -1,6 +1,6 @@
 <div class="popup">
  <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input" placeholder="输入搜索关键词">
+ <input type="text" id="local-search-input" placeholder="Seaching…">
  <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
+ <span class="popup-btn-close"><i class="fa fa-times-circle"></i></span>
 </div>

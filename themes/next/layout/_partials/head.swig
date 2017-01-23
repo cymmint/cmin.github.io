@@ -3,6 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 {# 百度收录 #}
 <meta name="baidu-site-verification" content="as87f5eopu" />
+{# 360收录 #}
+<meta name="360-site-verification" content="f86fdfae2d51a99a938800b331877bf3" />
 
 
 {# #238, Disable Baidu tranformation #}

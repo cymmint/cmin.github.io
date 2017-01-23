@@ -203,6 +203,7 @@ links_layout: inline
 links:
   半步多: https://jadyer.github.io/
   豪哥: https://holtyin.github.io/
+  前端踩坑那些事: http://febugs.com/
 
 
 # ---------------------------------------------------------------
@@ -381,7 +382,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page

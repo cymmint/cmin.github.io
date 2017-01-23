@@ -9,7 +9,9 @@ description: CSS日常经验杂谈与总结
 
 
 ### IE下Table与浮动层处于同级时，浮动失效解决方法
-> 为浮动层设置背景 `background:url(about:blank);`，设置一个不是背景的背景
+> 为浮动层设置背景 `background:url(about:blank);`设置一个不是背景的背景
+
+<!-- more -->
 
 
 ### iOS中textbox文本框清除圆角

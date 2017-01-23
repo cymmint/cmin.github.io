@@ -2,7 +2,7 @@
 title: pointer-events属性
 date: 2016-02-06 11:30:00
 top: 0
-tags: [属性]
+tags: [CSS属性]
 categories: [CSS]
 description: pointer-events属性
 ---

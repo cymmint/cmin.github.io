@@ -1,7 +1,12 @@
 // Custom styles.
+//首页
 .post-btn-top {
-  padding-top:40px;
+  padding-top:10px;
 }
+.posts-expand .post-eof {
+  margin:60px auto 50px;
+}
+
 
 //多说评论
 .ds-powered-by,
@@ -9,4 +14,55 @@
 .theme-next #ds-reset .duoshuo-ua-platform,
 .theme-next #ds-reset .duoshuo-ua-browser {
   display:none!important;
+}
+
+
+//搜索
+#local-search-input {
+  width:95%;
+  height:28px;
+  margin-bottom:0;
+  padding-left:28px;
+  border-bottom:none;
+  background:#f5f5f5;
+  line-height:28px;
+  font-size: 16px;
+  opacity:1;
+  &:focus {
+    opacity:1;
+  }
+}
+.popup {
+  overflow: hidden;
+  padding:0;
+  border-radius:0;
+  .fa-search {
+    padding:7px 0 0 15px;
+    font-size:18px;
+    color:#999;
+  }
+}
+.popup-btn-close {
+  padding-left:15px;
+  border-left:1px solid #eee;
+  top:10px;
+  .fa {
+    font-size:18px;
+    color:#999;
+  }
+}
+.popoverlay {
+  overflow-y:scroll;
+}
+#local-search-result {
+  //height:81%;
+}
+ul.search-result-list {
+  margin:0 10px 0 15px;
+  li {
+    margin: 10px 0 15px;
+  }
+}
+p.search-result {
+  margin: 0;
 }
