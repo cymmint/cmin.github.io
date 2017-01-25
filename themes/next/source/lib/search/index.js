@@ -1,5 +1,8 @@
 // Popup Window;
 var isfetched = false;
+var $popup = $('div.popup');
+var $popupCon = $('#local-search-result');
+
 if (search_path.length == 0) {
   search_path = "search.xml";
 }
@@ -7,7 +10,9 @@ if (search_path.length == 0) {
 
 function proceedsearch() {
   $("body").append('<div class="popoverlay">').css({'overflow': 'hidden', 'paddingRight': '17px'});
-  $('.popup').toggle();
+  $popup.toggle(function () {
+    popopConH();
+  });
 }
 // search function;
 var searchFunc = function (path, search_id, content_id) {
@@ -19,7 +24,7 @@ var searchFunc = function (path, search_id, content_id) {
     success: function (xmlResponse) {
       // get the contents from search data
       isfetched = true;
-      $('.popup').detach().appendTo('.header-inner');
+      $popup.detach().appendTo('.header-inner');
       var datas = $("entry", xmlResponse).map(function () {
         return {
           title: $("title", this).text(),
@@ -115,10 +120,21 @@ $('.popup-trigger').click(function (e) {
 });
 
 $('.popup-btn-close').click(function () {
-  $('.popup').hide();
+  $popup.hide();
   $(".popoverlay").remove();
   $('body').css({'overflow': '', 'paddingRight': ''});
 });
-$('.popup').click(function (e) {
+$popup.click(function (e) {
   e.stopPropagation();
+});
+
+//弹出内容区高
+function popopConH() {
+  if($popup.is(":visible")) {
+    $popupCon.css("height", $popup.height() - 48);
+  }
+}
+
+$(window).on("resize", function () {
+  popopConH();
 });

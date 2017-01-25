@@ -32,6 +32,9 @@ canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
 seo: true
+baidu_site_verification: as87f5eopu  #百度收录
+qihu_site_verification: c1c9310d5644d41618f71adea61b8d12  #360收录
+google_site_verification: X7xO4I7g3M6_efRNWv-shK_kV1MApEGoxqJ4x-s0i_k  #google收录
 
 # ---------------------------------------------------------------
 # Menu Settings

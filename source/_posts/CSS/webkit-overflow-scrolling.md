@@ -25,7 +25,7 @@ div {
 ### 一些问题
 
 #### 部分手机滚动时有卡顿
-分析可能是手机配置低，DOM渲染跟不上
+此问题主要集中在一些低配置手机，DOM渲染跟不上
 **解决方法：**使用GPU渲染
 
 ``` css
@@ -36,8 +36,9 @@ div {
 }
 ```
 
+
 #### 元素设置position属性后不能在滑动
-当你给一个元素设置过`position:absolute`或者`position:relative`后再增加`-webkit-overflow-scrolling: touch`属性后，此时滑动几次后可滚动区域会卡主，不能在滑动
+当给一个元素设置`position:absolute | relative`后，再增加`-webkit-overflow-scrolling:touch`属性，此时滑动几次后可能滚动区域会卡主，不能在滑动
 **解决方法：**这时给元素增加个**`z-index`**值就可以了
 
 ``` css

@@ -12,7 +12,7 @@ description: CSS常用小样式集合
 ``` css
 /* 多行（只支持webkit浏览器）*/
 .p1 { display:-webkit-box; -webkit-box-orient:vertical; margin-bottom:.05rem; -webkit-line-clamp:2; overflow:hidden; text-overflow:ellipsis; }
-/* 多行 */
+/* 单行 */
 .p2 { width:150px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 ```
 

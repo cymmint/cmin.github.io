@@ -80,3 +80,19 @@ p {
     text-align: end; /*结束边界对齐*/
 }
 ```
+
+
+### 文本大小
+**text-size-adjust:** `auto` | `none` | `<percentage>`
+设置**移动端页面**中对象文本的大小调整，目前要使用需要加各浏览器的私有前缀 **-webkit-, -moz-, -o-, -ms-**
+
+#### 属性值
+- **auto:** 文本大小根据设备尺寸进行调整
+- **none:** 文本大小不会根据设备尺寸进行调整
+- <percentage>: 用百分比来指定文本大小在设备尺寸不同的情况下如何调整
+
+#### 说明
+- 当样式表里**font-size < 12px**时，移动端浏览器里字体显示仍为12px，这时可以用`html { -webkit-text-size-adjust:none;}`
+- -webkit-text-size-adjust 放在body上会导致页面缩放失效
+- body会继承定义在html的样式
+- 用-webkit-text-size-adjust不要定义成可继承的或全局的
