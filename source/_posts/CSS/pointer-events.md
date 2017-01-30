@@ -7,7 +7,7 @@ categories: [CSS]
 description: pointer-events属性
 ---
 
-### 功能简介
+### 功能
 > `pointer-events` 是CSS3新增属性，设置或检索在何时成为属性事件的target。
 **pointer-events:** _auto | none | visiblepainted | visiblefill | visiblestroke | visible | painted | fill | stroke | all_
 

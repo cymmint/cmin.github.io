@@ -37,7 +37,7 @@ div {
 ```
 
 
-#### 元素设置position属性后不能在滑动
+#### 元素设置position属性后不能滑动
 当给一个元素设置`position:absolute | relative`后，再增加`-webkit-overflow-scrolling:touch`属性，此时滑动几次后可能滚动区域会卡主，不能在滑动
 **解决方法：**这时给元素增加个**`z-index`**值就可以了
 
