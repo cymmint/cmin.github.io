@@ -1,10 +1,10 @@
 ---
 title: CSS em单位弹性布局
-date: 2015-05-04 17:20:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS单位]
 categories: [CSS]
 description: CSS em单位弹性布局
+date: 2015-05-04 17:20:00
 ---
 
 

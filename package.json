@@ -31,9 +31,11 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "hexo-translate-title": "^1.0.3"
   },
   "devDependencies": {
-    "hexo-generator-sitemap": "^1.1.2"
+    "hexo-generator-sitemap": "^1.1.2",
+    "hexo-translate-title": "^1.0.3"
   }
 }

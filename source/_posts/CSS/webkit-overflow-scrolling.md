@@ -1,10 +1,10 @@
 ---
 title: webkit-overflow-scrolling 属性
-date: 2016-03-17 16:16:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: IOS下控制元素在移动设备上是否使用滚动回弹效果
+date: 2016-03-17 16:16:00
 ---
 
 

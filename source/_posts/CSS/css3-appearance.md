@@ -1,10 +1,10 @@
 ---
 title: CSS3 appearance 属性
-date: 2015-02-12 10:30:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: CSS3 appearance 属性
+date: 2015-02-12 10:30:00
 ---
 
 

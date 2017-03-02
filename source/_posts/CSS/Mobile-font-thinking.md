@@ -1,10 +1,10 @@
 ---
 title: 移动端字体引入思考
-date: 2015-01-04 16:50:00
-top: 0 #整数，越大越靠前
-tags: [总结]
+top: 0
+tags: [字体]
 categories: [CSS]
 description: 移动端字体引入的思考
+date: 2015-01-04 16:50:00
 ---
 
 

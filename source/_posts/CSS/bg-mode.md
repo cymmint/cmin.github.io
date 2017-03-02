@@ -1,10 +1,10 @@
 ---
 title: CSS3 混合模式
-date: 2015-01-04 17:00:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: CSS3 背景混合模式mix-blend-mode background-blend-mode简介
+date: 2015-01-04 17:00:00
 ---
 
 

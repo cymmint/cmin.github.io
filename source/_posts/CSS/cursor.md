@@ -1,10 +1,10 @@
 ---
 title: CSS cursor属性值
-date: 2016-11-23 12:47:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: CSS cursor属性值详解
+date: 2016-11-23 12:47:00
 ---
 
 

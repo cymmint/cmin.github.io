@@ -1,10 +1,10 @@
 ---
 title: 去除chrome表单自动填充淡黄色背景
-date: 2017-01-05 10:20:00
-top: 9 #整数，越大越靠前
+top: 9
 tags: [CSS属性]
 categories: [CSS]
 description: 去除chrome表单自动填充淡黄色背景
+date: 2017-01-05 10:20:00
 ---
 
 ### 利用CSS -webkit-autofill属性

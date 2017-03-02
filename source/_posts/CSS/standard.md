@@ -1,10 +1,10 @@
 ---
 title: CSS 书写规范与顺序
-date: 2015-01-15 12:30:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [经验]
 categories: [CSS]
 description: CSS 书写规范与顺序
+date: 2015-01-15 12:30:00
 ---
 
 

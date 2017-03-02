@@ -1,10 +1,10 @@
 ---
 title: CSS3 Object-fit和Object-position属性
-date: 2015-12-09 16:54:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: CSS3 Object-fit和Object-position属性用法介绍
+date: 2015-12-09 16:54:00
 ---
 
 

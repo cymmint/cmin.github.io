@@ -1,10 +1,10 @@
 ---
 title: CSS @media 查询
-date: 2015-01-04 16：50：00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: CSS @media 查询简介
+date: 2015-01-04 16:50:00
 ---
 
 

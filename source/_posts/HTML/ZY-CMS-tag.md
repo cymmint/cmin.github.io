@@ -1,10 +1,10 @@
 ---
 title: 泽元CMS标签
-date: 2015-01-05 10:10:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CMS, 笔记]
 categories: [HTML]
 description: 泽元CMS标签简介
+date: 2015-01-05 10:10:00
 ---
 
 ### 新闻列表

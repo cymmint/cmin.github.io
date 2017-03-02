@@ -1,10 +1,10 @@
 ---
 title: HTML 随手笔记
-date: 2016-02-23 17:00:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [笔记]
 categories: [HTML]
 description: HTML 随手笔记
+date: 2016-02-23 17:00:00
 ---
 
 

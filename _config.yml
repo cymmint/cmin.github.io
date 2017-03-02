@@ -100,6 +100,14 @@ search:
   format: html
   limit: 1000
 
+# 中文标题翻译
+#translate_title:
+  #translate_way: youdao    #google | baidu | youdao
+  #youdao_api_key: 35830688
+  #youdao_keyfrom: cmin-blog
+  #is_need_proxy: true     #true | false
+  #proxy_url: http://localhost:8123
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

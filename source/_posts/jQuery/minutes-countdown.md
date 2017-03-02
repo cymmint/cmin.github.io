@@ -1,10 +1,10 @@
 ---
 title: 分秒倒计时
-date: 2016-05-10 20:10:00
 top: 0
 tags: [倒计时]
 categories: [jQuery]
-description: 是一个毫秒数值的分秒倒计时
+description: 一个毫秒数值的分秒倒计时
+date: 2016-05-10 20:10:00
 ---
 
 ### 实现功能

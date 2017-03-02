@@ -1,10 +1,10 @@
 ---
 title: WAP、WML 学习手记
-date: 2015-03-11 11:30:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [WML, WAP]
 categories: [HTML]
 description: WAP、WML 学习手记
+date: 2015-03-11 11:30:00
 ---
 
 

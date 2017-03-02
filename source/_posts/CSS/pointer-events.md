@@ -1,10 +1,10 @@
 ---
 title: pointer-events属性
-date: 2016-02-06 11:30:00
 top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: pointer-events属性
+date: 2016-02-06 11:30:00
 ---
 
 ### 功能

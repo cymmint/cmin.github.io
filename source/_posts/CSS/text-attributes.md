@@ -1,10 +1,10 @@
 ---
 title: CSS 文字相关属性
-date: 2015-01-04 17:37:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: CSS字体相关属性注解
+date: 2015-01-04 17:37:00
 ---
 
 

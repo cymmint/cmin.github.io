@@ -1,10 +1,10 @@
 ---
 title: A标签的一些属性
-date: 2015-01-15
-top: 0 #整数，越大越靠前
+top: 0
 tags: [A标签]
 categories: [HTML]
 description: A标签的一些属性
+date: 2015-01-15 00:00:00
 ---
 
 

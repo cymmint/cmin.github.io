@@ -1,10 +1,10 @@
 ---
 title: CSS3 transform 相关属性
-date: 2015-3-25 16:00:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: CSS3 transform 相关属性详解
+date: 2015-03-25 16:00:00
 ---
 
 

@@ -1,10 +1,10 @@
 ---
 title: 常用的 Meta 标签
-date: 2015-01-14 12:55:00
-top: 0 #整数，越大越靠前
-tags: [meta]
+top: 0
+tags: [Meta]
 categories: [HTML]
 description: 常用的 Meta 标签
+date: 2015-01-14 12:55:00
 ---
 
 

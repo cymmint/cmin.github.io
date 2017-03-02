@@ -1,10 +1,10 @@
 ---
 title: CSS content、counter-increment、counter-reset详解
-date: 2015-03-19 16:00:00
-top: 0 #整数，越大越靠前
+top: 0
 tags: [CSS属性]
 categories: [CSS]
 description: CSS content、counter-increment、counter-reset详解
+date: 2015-03-19 16:00:00
 ---
 
 
