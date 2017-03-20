@@ -17,7 +17,7 @@ date: 2016-11-29 10:30:00
 ``` js
 return new Date($.ajax({async: false}).getResponseHeader("Date"));
 ```
-以上函数返回的就是一个Date对象，注意在使用ajax时必须同步，要不然无法返回时间日期；`无需填写请求链接`。
+以上函数返回的就是一个Date对象，注意在使用ajax时**必须同步**，要不然无法返回时间日期；`无需填写请求链接`。
 
 
 ### 原生JS
@@ -30,7 +30,7 @@ function getServerDate(){
         xhr = new ActiveObject("Microsoft")
     }
 
-    xhr.open("GET","/",false)//false不可变
+    xhr.open("GET","/",false); //false不可变
     xhr.send(null);
     var date = xhr.getResponseHeader("Date");
     return new Date(date);
