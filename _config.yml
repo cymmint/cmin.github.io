@@ -113,5 +113,5 @@ search:
 deploy:
   type: git
   repo:
-    github: git@github.com:cymmint/cymmint.github.io.git
     coding: git@git.coding.net:cymmint/cymmint.git
+    github: git@github.com:cymmint/cymmint.github.io.git
