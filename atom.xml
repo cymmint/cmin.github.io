@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>摘星少年</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://cmin.me/"/>
+  <updated>2018-01-31T04:07:34.407Z</updated>
+  <id>http://cmin.me/</id>
+  
+  <author>
+    <name>摘星少年_cmin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Package.json 文件详解</title>
+    <link href="http://cmin.me/blog/2017-03/IDE/package.json-dependencies/"/>
+    <id>http://cmin.me/blog/2017-03/IDE/package.json-dependencies/</id>
+    <published>2017-03-20T16:00:00.000Z</published>
+    <updated>2018-01-31T04:07:34.407Z</updated>
+    
+    <content type="html"><![CDATA[<p>每个npm的安装包里面都会包含一个package.json，定义了这个项目所需要的各种模块，以及项目的配置信息（比如名称、版本、许可证等元数据）。 npm install 命令根据这个配置文件，自动下载所需的模块，也就是配置项目所需的运行和开发环境。<br>package.json文件可以手工编写，也可以使用<code>npm init</code>命令自动生成，这个命令采用互动方式，要求用户回答一些问题，然后在当前目录生成一个基本的package.json文件。所有问题之中，只有项目名称（name）和项目版本（version）是必填的，其他都是选填的。</p>
+<a id="more"></a>
+<p><strong>一个简单的package.json文件</strong><br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"name"</span>: <span class="string">"xxx"</span>,</div><div class="line">    <span class="attr">"version"</span>: <span class="string">"0.0.0"</span>,</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>上面代码说明， package.json 文件内部就是一个JSON对象，该对象的每一个成员就是当前项目的一项设置。比如 name 就是项目名称， version 是版本（遵守“大版本.次要版本.小版本”的格式）。</p>
+<p><strong>一个完整的package.json</strong><br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"name"</span>: <span class="string">"Hello World"</span>,</div><div class="line">    <span class="attr">"version"</span>: <span class="string">"0.0.1"</span>,</div><div class="line">    <span class="attr">"author"</span>: <span class="string">"张三"</span>,</div><div class="line">    <span class="attr">"description"</span>: <span class="string">"第一个node.js程序"</span>,</div><div class="line">    <span class="attr">"scripts"</span>: &#123;</div><div class="line">        <span class="attr">"start"</span>: <span class="string">"node index.js"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"keywords"</span>: [</div><div class="line">        <span class="string">"node.js"</span>,</div><div class="line">        <span class="string">"javascript"</span></div><div class="line">    ],</div><div class="line">    <span class="attr">"repository"</span>: &#123;</div><div class="line">        <span class="attr">"type"</span>: <span class="string">"git"</span>,</div><div class="line">        <span class="attr">"url"</span>: <span class="string">"https://path/to/url"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"license"</span>: <span class="string">"MIT"</span>,</div><div class="line">        <span class="attr">"engines"</span>: &#123;</div><div class="line">        <span class="attr">"node"</span>: <span class="string">"0.10.x"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"bugs"</span>: &#123;</div><div class="line">        <span class="attr">"url"</span>: <span class="string">"http://path/to/bug"</span>,</div><div class="line">        <span class="attr">"email"</span>: <span class="string">"bug@example.com"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"contributors"</span>: [</div><div class="line">        &#123;</div><div class="line">            <span class="attr">"name"</span>: <span class="string">"李四"</span>,</div><div class="line">            <span class="attr">"email"</span>: <span class="string">"lisi@example.com"</span></div><div class="line">        &#125;</div><div class="line">    ],</div><div class="line">    <span class="attr">"dependencies"</span>: &#123;</div><div class="line">        <span class="attr">"express"</span>: <span class="string">"latest"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"devDependencies"</span>: &#123;</div><div class="line">        <span class="attr">"bower"</span>: <span class="string">"~1.2.8"</span>,</div><div class="line">        <span class="attr">"grunt"</span>: <span class="string">"~0.4.1"</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>下面详细解释package.json文件的各个字段。</p>
+<h3 id="bin-字段"><a href="#bin-字段" class="headerlink" title="bin 字段"></a>bin 字段</h3><p>bin项用来指定各个内部命令对应的可执行文件的位置。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">"bin": &#123;</div><div class="line">    "someTool": "./bin/someTool.js"</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="main-字段"><a href="#main-字段" class="headerlink" title="main 字段"></a>main 字段</h3><p>main 字段指定了加载该模块时的入门文件，默认是模块根目录下面的 index.js</p>
+<h3 id="scripts-字段"><a href="#scripts-字段" class="headerlink" title="scripts 字段"></a>scripts 字段</h3><blockquote>
+<p>scripts 指定了运行脚本命令的npm命令行缩写，比如start指定了运行 npm run start 时，所要执行的命令。</p>
+</blockquote>
+<p>例如下面的设置指定了 npm run preinstall 、 npm run postinstall 、 npm run start 、 npm run test 时，所要执行的命令。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">"scripts": &#123;</div><div class="line">    "preinstall": "echo here it comes!",</div><div class="line">    "postinstall": "echo there it goes!",</div><div class="line">    "start": "node index.js",</div><div class="line">    "test": "tap test/*.js"</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="devDependencies-dependencies-字段"><a href="#devDependencies-dependencies-字段" class="headerlink" title="devDependencies, dependencies 字段"></a>devDependencies, dependencies 字段</h3><p>我们在使用npm install 安装模块或插件的时候，有两种命令把他们写入到 package.json 文件里面去，比如：<br><code>--save</code> 对应 -&gt; 安装到 dependencies 字段<br><code>--save-dev</code> 对应 -&gt; 安装到 devDependencies 字段<br>devDependencies 和 dependencies 字段实际区别是：<br><strong><em>devDependencies 里面的插件只用于开发环境，不用于生产环境，而 dependencies 是需要发布到生产环境的。</em></strong><br><strong><em>devDependencies 指定项目开发所需要的模块，dependencies 字段指定了项目运行所依赖的模块。</em></strong></p>
+<h3 id="peerDependencies-字段"><a href="#peerDependencies-字段" class="headerlink" title="peerDependencies 字段"></a>peerDependencies 字段</h3><p>peerDependencies 字段，就是用来供插件指定其所需要的主工具的版本。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"name"</span>: <span class="string">"chai-as-promised"</span>,</div><div class="line">    <span class="attr">"peerDependencies"</span>: &#123;</div><div class="line">        <span class="attr">"chai"</span>: <span class="string">"1.x"</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>上面代码指定，安装 chai-as-promised 模块时，主程序 chai 必须一起安装，而且 chai 的版本必须是 1.x 。如果你的项目指定的依赖是 chai 的2.0版本，就会报错。</p>
+<h3 id="config-字段"><a href="#config-字段" class="headerlink" title="config 字段"></a>config 字段</h3><p>config字段用于向环境变量输出值。<br>下面是一个package.json文件。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"name"</span> : <span class="string">"foo"</span>,</div><div class="line">    <span class="attr">"config"</span> : &#123; <span class="attr">"port"</span> : <span class="string">"8080"</span> &#125;,</div><div class="line">    <span class="attr">"scripts"</span> : &#123; <span class="attr">"start"</span> : <span class="string">"node server.js"</span> &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>然后，在 server.js 脚本就可以引用config字段的值。<br>http.createServer(…).listen(process.env.npm_package_config_port)</p>
+<p>用户可以改变这个值<br>$ npm config setfoo:port 80</p>
+<h3 id="browser-字段"><a href="#browser-字段" class="headerlink" title="browser 字段"></a>browser 字段</h3><p>browser指定该模板供浏览器使用的版本。Browserify这样的浏览器打包工具，通过它就知道该打包那个文件。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">"browser": &#123;</div><div class="line">    "tipso": "./node_modules/tipso/src/tipso.js"</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="engines-字段"><a href="#engines-字段" class="headerlink" title="engines 字段"></a>engines 字段</h3><p>engines指明了该项目所需要的node.js版本。</p>
+<h3 id="man-字段"><a href="#man-字段" class="headerlink" title="man 字段"></a>man 字段</h3><p>man用来指定当前模块的man文档的位置。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">"man" :[ "./doc/calc.1" ]</div></pre></td></tr></table></figure></p>
+<h3 id="preferGlobal字段"><a href="#preferGlobal字段" class="headerlink" title="preferGlobal字段"></a>preferGlobal字段</h3><p>preferGlobal的值是布尔值，表示当用户不将该模块安装为全局模块时（即不用–global参数），要不要显示警告，表示该模块的本意就是安装为全局模块。</p>
+<h3 id="style字段"><a href="#style字段" class="headerlink" title="style字段"></a>style字段</h3><p>style指定供浏览器使用时，样式文件所在的位置。样式文件打包工具parcelify，通过它知道样式文件的打包位置。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">"style": [</div><div class="line">    "./node_modules/tipso/src/tipso.css"</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<h3 id="Author-contributors-字段"><a href="#Author-contributors-字段" class="headerlink" title="Author, contributors 字段"></a>Author, contributors 字段</h3><p>都是可选字段。author是一个人，contributors是一组人。</p>
+<h3 id="license-字段"><a href="#license-字段" class="headerlink" title="license 字段"></a>license 字段</h3><p>你应该要指定一个许可证，让人知道使用的权利和限制的。</p>
+<h3 id="description-字段"><a href="#description-字段" class="headerlink" title="description 字段"></a>description 字段</h3><p>项目简介。</p>
+<h3 id="keywords-字段"><a href="#keywords-字段" class="headerlink" title="keywords 字段"></a>keywords 字段</h3><p>关键字。</p>
+<h3 id="homepage-字段"><a href="#homepage-字段" class="headerlink" title="homepage 字段"></a>homepage 字段</h3><p>项目官网的url。</p>
+<h3 id="bugs-字段"><a href="#bugs-字段" class="headerlink" title="bugs 字段"></a>bugs 字段</h3><p>项目的提交问题的url和（或）邮件地址。</p>
+<h3 id="插件版本限定"><a href="#插件版本限定" class="headerlink" title="插件版本限定"></a>插件版本限定</h3><p>版本号 x.y.z ：</p>
+<ul>
+<li>x 表示一些设计的变动及模块的重构之类的，会升级x版本号</li>
+<li>y 表示一些大的版本更改，比如一些API的变化</li>
+<li>z 表示一些小的bug fix, 更改z的号</li>
+</ul>
+<p>在package.json里面dependencies依赖包的版本号前面的符号有两种，一种是~，一种是^。<br><code>~:</code> 是匹配最近的小版本 比如~1.0.2 将会匹配所有 1.0.x版本，但不匹配1.1.0<br><code>^:</code> 是最近的一个大版本 比如^1.0.2 将会匹配所有 1.x.x, 但不包括2.x.x<br><code>无~ ^:</code> 则安装时只安装指定版本<br><code>latest:</code> 安装最新版本</p>
+]]></content>
+    
+    <summary type="html">
+    
+      Package.json 文件详解
+    
+    </summary>
+    
+      <category term="IDE" scheme="http://cmin.me/categories/ide/"/>
+    
+    
+      <category term="Package" scheme="http://cmin.me/tags/package/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS日常经验杂谈</title>
+    <link href="http://cmin.me/blog/2017-01/CSS/experience/"/>
+    <id>http://cmin.me/blog/2017-01/CSS/experience/</id>
+    <published>2017-01-22T12:20:00.000Z</published>
+    <updated>2018-01-31T04:07:34.306Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="IE下Table与浮动层处于同级时，浮动失效解决方法"><a href="#IE下Table与浮动层处于同级时，浮动失效解决方法" class="headerlink" title="IE下Table与浮动层处于同级时，浮动失效解决方法"></a>IE下Table与浮动层处于同级时，浮动失效解决方法</h3><blockquote>
+<p>为浮动层设置背景 <code>background:url(about:blank);</code>设置一个不是背景的背景</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="iOS中textbox文本框清除圆角"><a href="#iOS中textbox文本框清除圆角" class="headerlink" title="iOS中textbox文本框清除圆角"></a>iOS中textbox文本框清除圆角</h3><p>在iOS、Mac safari中，所有的textbox, select, checkbox都会被强制美化为圆角。但在特殊情况下需要清除圆角时发现iOS中使用以下传统的css无效。</p>
+<blockquote>
+<p>解决方法：<code>border-radius:0; -webkit-appearance:none;</code></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      CSS日常经验杂谈与总结
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://cmin.me/categories/css/"/>
+    
+    
+      <category term="CSS经验" scheme="http://cmin.me/tags/css%E7%BB%8F%E9%AA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>去除chrome表单自动填充淡黄色背景</title>
+    <link href="http://cmin.me/blog/2017-01/CSS/webkit-autofill/"/>
+    <id>http://cmin.me/blog/2017-01/CSS/webkit-autofill/</id>
+    <published>2017-01-05T02:20:00.000Z</published>
+    <updated>2018-01-31T04:07:34.355Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="利用CSS-webkit-autofill属性"><a href="#利用CSS-webkit-autofill属性" class="headerlink" title="利用CSS -webkit-autofill属性"></a>利用CSS -webkit-autofill属性</h3><p>利用内阴影颜色覆盖自动填充背景色，但如果input必须设置为无背景效果就不是很好了</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-webkit-autofill</span> &#123;</div><div class="line">    <span class="attribute">-webkit-box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">50px</span> white inset;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="利用HTML表单属性"><a href="#利用HTML表单属性" class="headerlink" title="利用HTML表单属性"></a>利用HTML表单属性</h3><p>关闭表单自动完成属性 autocomplete=”off”（此方法好像没有效果）</p>
+<h3 id="利用JS"><a href="#利用JS" class="headerlink" title="利用JS"></a>利用JS</h3><p>是遍历需要执行的Input标签，然后插入自身DOM（<em>插入其它的不行</em>），在其获得焦点时删除其子节点，否则在表单提交的时数据可能会有问题</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (navigator.userAgent.toLowerCase().indexOf(<span class="string">"applewebkit"</span>) &gt;= <span class="number">0</span>) &#123;</div><div class="line">    $(<span class="built_in">window</span>).load(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        $(<span class="string">'input'</span>).each(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">            $(<span class="keyword">this</span>).append(<span class="keyword">this</span>.outerHTML);</div><div class="line">        &#125;);</div><div class="line">    &#125;);</div><div class="line">    $(<span class="string">'input'</span>).focus(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        $(<span class="keyword">this</span>).children().remove();</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      去除chrome表单自动填充淡黄色背景
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://cmin.me/categories/css/"/>
+    
+    
+      <category term="CSS属性" scheme="http://cmin.me/tags/css%E5%B1%9E%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS获取服务器时间</title>
+    <link href="http://cmin.me/blog/2016-11/JS/get-server-time/"/>
+    <id>http://cmin.me/blog/2016-11/JS/get-server-time/</id>
+    <published>2016-11-29T02:30:00.000Z</published>
+    <updated>2018-01-31T04:07:34.416Z</updated>
+    
+    <content type="html"><![CDATA[<p>用js做时间校正，获取本机时间，是存在bug的。使用JS也可获取到服务器时间，原理是使用 AJAX 请求，返回的头部信息就含有服务器端的时间信息，获取到就可以了。</p>
+<a id="more"></a>
+<h3 id="依赖jQuery"><a href="#依赖jQuery" class="headerlink" title="依赖jQuery"></a>依赖jQuery</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>($.ajax(&#123;<span class="attr">async</span>: <span class="literal">false</span>&#125;).getResponseHeader(<span class="string">"Date"</span>));</div></pre></td></tr></table></figure>
+<p>以上函数返回的就是一个Date对象，注意在使用ajax时<strong>必须同步</strong>，要不然无法返回时间日期；<code>无需填写请求链接</code>。</p>
+<h3 id="原生JS"><a href="#原生JS" class="headerlink" title="原生JS"></a>原生JS</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getServerDate</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> xhr = <span class="literal">null</span>;</div><div class="line">    <span class="keyword">if</span>(<span class="built_in">window</span>.XMLHttpRequest)&#123;</div><div class="line">        xhr = <span class="keyword">new</span> <span class="built_in">window</span>.XMLHttpRequest();</div><div class="line">    &#125;<span class="keyword">else</span>&#123; <span class="comment">// ie</span></div><div class="line">        xhr = <span class="keyword">new</span> ActiveObject(<span class="string">"Microsoft"</span>)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    xhr.open(<span class="string">"GET"</span>,<span class="string">"/"</span>,<span class="literal">false</span>); <span class="comment">//false不可变</span></div><div class="line">    xhr.send(<span class="literal">null</span>);</div><div class="line">    <span class="keyword">var</span> date = xhr.getResponseHeader(<span class="string">"Date"</span>);</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Date</span>(date);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>同样返回的是一个Date对象，xhr.open()必须使用同步；<br>无需填写请求链接；<br>open，send，和getResponseHeader 必须按序编写；<br>如需使用异步请求，可监听onreadystatechange状态来做不同的操作。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      JS获取服务器时间的方法
+    
+    </summary>
+    
+      <category term="JS" scheme="http://cmin.me/categories/js/"/>
+    
+    
+      <category term="时间" scheme="http://cmin.me/tags/%E6%97%B6%E9%97%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS cursor属性值</title>
+    <link href="http://cmin.me/blog/2016-11/CSS/cursor/"/>
+    <id>http://cmin.me/blog/2016-11/CSS/cursor/</id>
+    <published>2016-11-23T04:47:00.000Z</published>
+    <updated>2018-01-31T04:07:34.303Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="功能简介"><a href="#功能简介" class="headerlink" title="功能简介"></a>功能简介</h3><p>定义鼠标指针放在一个元素边界范围内时所用的光标形状</p>
+<a id="more"></a>
+<h3 id="属性取值"><a href="#属性取值" class="headerlink" title="属性取值"></a>属性取值</h3><table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>需使用的自定义光标的 URL</td>
+</tr>
+<tr>
+<td>default</td>
+<td>默认光标（通常是一个箭头）</td>
+</tr>
+<tr>
+<td>auto</td>
+<td>默认浏览器设置的光标</td>
+</tr>
+<tr>
+<td>crosshair</td>
+<td>光标呈现为十字线</td>
+</tr>
+<tr>
+<td>pointer</td>
+<td>光标呈现为指示链接的指针（一只手）</td>
+</tr>
+<tr>
+<td>move</td>
+<td>此光标指示某对象可被移动</td>
+</tr>
+<tr>
+<td>e-resize</td>
+<td>此光标指示矩形框的边缘可被向右（东）移动</td>
+</tr>
+<tr>
+<td>ne-resize</td>
+<td>此光标指示矩形框的边缘可被向上及向右移动（北/东）</td>
+</tr>
+<tr>
+<td>nw-resize</td>
+<td>此光标指示矩形框的边缘可被向上及向左移动（北/西）</td>
+</tr>
+<tr>
+<td>n-resize</td>
+<td>此光标指示矩形框的边缘可被向上（北）移动</td>
+</tr>
+<tr>
+<td>se-resize</td>
+<td>此光标指示矩形框的边缘可被向下及向右移动（南/东）</td>
+</tr>
+<tr>
+<td>sw-resize</td>
+<td>此光标指示矩形框的边缘可被向下及向左移动（南/西）</td>
+</tr>
+<tr>
+<td>s-resize</td>
+<td>此光标指示矩形框的边缘可被向下移动（南）</td>
+</tr>
+<tr>
+<td>w-resize</td>
+<td>此光标指示矩形框的边缘可被向左移动（西）</td>
+</tr>
+<tr>
+<td>text</td>
+<td>此光标指示文本</td>
+</tr>
+<tr>
+<td>wait</td>
+<td>此光标指示程序正忙（通常是一只表或沙漏）</td>
+</tr>
+<tr>
+<td>help</td>
+<td>此光标指示可用的帮助（通常是一个问号或一个气球）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/images/blog/css/corsur-1.png" alt=""><br><img src="/images/blog/css/corsur-2.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      CSS cursor属性值详解
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://cmin.me/categories/css/"/>
+    
+    
+      <category term="CSS属性" scheme="http://cmin.me/tags/css%E5%B1%9E%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于像素的一些概念</title>
+    <link href="http://cmin.me/blog/2016-09/IDE/about-pixels/"/>
+    <id>http://cmin.me/blog/2016-09/IDE/about-pixels/</id>
+    <published>2016-09-01T07:15:00.000Z</published>
+    <updated>2018-01-31T04:07:34.392Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>在进行具体的分析之前，首先得知道下面这些关键性基本概念。</p>
+</blockquote>
+<h3 id="物理像素-physical-pixel"><a href="#物理像素-physical-pixel" class="headerlink" title="物理像素(physical pixel)"></a>物理像素(physical pixel)</h3><p>一个物理像素是显示器(手机屏幕)上最小的物理显示单元，在操作系统的调度下，每一个设备像素都有自己的颜色值和亮度值。</p>
+<a id="more"></a>
+<h3 id="设备独立像素-density-independent-pixel"><a href="#设备独立像素-density-independent-pixel" class="headerlink" title="设备独立像素(density-independent pixel)"></a>设备独立像素(density-independent pixel)</h3><p>设备独立像素(也叫密度无关像素)，可以认为是计算机坐标系统中得一个点，这个点代表一个可以由程序使用的虚拟像素(比如: css像素)，然后由相关系统转换为物理像素。<br>所以说，物理像素和设备独立像素之间存在着一定的对应关系，这就是接下来要说的设备像素比。</p>
+<h3 id="设备像素比-device-pixel-ratio"><a href="#设备像素比-device-pixel-ratio" class="headerlink" title="设备像素比(device pixel ratio )"></a>设备像素比(device pixel ratio )</h3><p>设备像素比(简称dpr)定义了物理像素和设备独立像素的对应关系，它的值可以按如下的公式的得到：<br><strong><code>设备像素比 = 物理像素 / 设备独立像素</code></strong>  // 在某一方向上，x方向或者y方向</p>
+<p>在javascript中，可以通过 <code>window.devicePixelRatio</code> 获取到当前设备的dpr。<br>在css中，可以通过 <strong>-webkit-device-pixel-ratio，-webkit-min-device-pixel-ratio和 -webkit-max-device-pixel-ratio</strong> 进行媒体查询，对不同dpr的设备，做一些样式适配(这里只针对webkit内核的浏览器和webview)。</p>
+<hr>
+<p>综合上面几个概念，一起举例说明下：<br>以iphone6为例：</p>
+<ol>
+<li>设备宽高为375×667，可以理解为设备独立像素(或css像素)。</li>
+<li>dpr为2，根据上面的计算公式，其物理像素就应该×2，为750×1334。</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      关于像素的一些概念介绍
+    
+    </summary>
+    
+      <category term="IDE" scheme="http://cmin.me/categories/ide/"/>
+    
+    
+      <category term="像素" scheme="http://cmin.me/tags/%E5%83%8F%E7%B4%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>seajs的安装使用</title>
+    <link href="http://cmin.me/blog/2016-09/IDE/seajs-install/"/>
+    <id>http://cmin.me/blog/2016-09/IDE/seajs-install/</id>
+    <published>2016-09-01T06:18:00.000Z</published>
+    <updated>2018-01-31T04:07:34.413Z</updated>
+    
+    <content type="html"><![CDATA[<p>Sea.js 追求简单、自然的代码书写和组织方式，具有以下核心特性：</p>
+<ul>
+<li>简单友好的模块定义规范：Sea.js 遵循 CMD 规范，可以像 Node.js 一般书写模块代码。</li>
+<li>自然直观的代码组织方式：依赖的自动加载、配置的简洁清晰，可以让我们更多地享受编码的乐趣。</li>
+</ul>
+<a id="more"></a>
+<h3 id="安装使用"><a href="#安装使用" class="headerlink" title="安装使用"></a>安装使用</h3><p><code>npm install spm -g</code><br><code>spm install seajs</code></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">seajs.config(&#123;</div><div class="line">    <span class="comment">// 设置路径，方便跨目录调用</span></div><div class="line">    map: [</div><div class="line">        <span class="comment">//['/static/', '/lldq/static/'] //发布上线时JS文件路径替换[a &lt;- b]</span></div><div class="line">    ],</div><div class="line">    <span class="attr">base</span>: <span class="string">'/static/js'</span>,</div><div class="line">    <span class="attr">paths</span>: &#123;</div><div class="line">        <span class="string">"components"</span>: <span class="string">'/static/components'</span>,</div><div class="line">        <span class="string">"models"</span>: <span class="string">'/static/js/models'</span>,</div><div class="line">        <span class="string">"sourceCmd"</span>: <span class="string">'/static/js/sources-cmd'</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">alias</span>: &#123;</div><div class="line">        <span class="string">"jquery"</span>: <span class="string">"components/jquery/jquery"</span>,</div><div class="line">        <span class="string">"vue"</span>: <span class="string">"components/vue/vue"</span>,</div><div class="line">        <span class="string">"common"</span>: <span class="string">"models/common"</span></div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      seajs的安装使用
+    
+    </summary>
+    
+      <category term="IDE" scheme="http://cmin.me/categories/ide/"/>
+    
+    
+      <category term="Seajs" scheme="http://cmin.me/tags/seajs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FIS3 环境搭建</title>
+    <link href="http://cmin.me/blog/2016-09/IDE/fis3-building/"/>
+    <id>http://cmin.me/blog/2016-09/IDE/fis3-building/</id>
+    <published>2016-09-01T02:00:00.000Z</published>
+    <updated>2018-01-31T04:07:34.398Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>FIS3 （ <a href="http://fis.baidu.com/fis3/index.html" target="_blank" rel="external">官网地址</a> ）是面向前端的工程构建工具。解决前端工程中性能优化、资源加载（异步、同步、按需、预加载、依赖管理、合并、内嵌）、模块化开发、自动化工具、开发规范、代码部署等问题。</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
+<li>下载 <a href="https://nodejs.org/en/" target="_blank" rel="external">NodeJS</a></li>
+<li>下载 <a href="https://www.baidu.com/s?ie=UTF-8&amp;wd=java%20jdk" target="_blank" rel="external">JAVA JDK</a></li>
+</ul>
+<h3 id="安装工具"><a href="#安装工具" class="headerlink" title="安装工具"></a>安装工具</h3><h4 id="安装-JAVA-JDK、NodeJS，选择安装目录即可"><a href="#安装-JAVA-JDK、NodeJS，选择安装目录即可" class="headerlink" title="安装 JAVA JDK、NodeJS，选择安装目录即可"></a>安装 <code>JAVA JDK</code>、<code>NodeJS</code>，选择安装目录即可</h4><h4 id="安装-FIS3"><a href="#安装-FIS3" class="headerlink" title="安装 FIS3"></a>安装 <code>FIS3</code></h4><p>当NodeJS安装成功后，在命令窗口内运行 <code>npm -g install fis3</code>，FIS3安装成功后，会出现以下图样<br><img src="/images/blog/ide/fis3.png" alt=""></p>
+<h4 id="安装-fis3-jello"><a href="#安装-fis3-jello" class="headerlink" title="安装 fis3-jello"></a>安装 fis3-jello</h4><p>在命令窗口内运行 <code>npm install -g fis3-jello</code><br>然后 <a href="https://github.com/fis-scaffold/jello-demo" target="_blank" rel="external">下载demo</a> 文件，在 <strong>fis-conf.js</strong> 中添加以下代码即可<br><code>fis.require(&#39;jello&#39;)(fis);</code></p>
+<h4 id="安装相关的插件"><a href="#安装相关的插件" class="headerlink" title="安装相关的插件"></a>安装相关的插件</h4><p><code>npm install -g 插件名</code><br><code>npm install -g fis-parser-less</code><br>在fis3里内置了部分插件，如图片压缩、JS压缩（fis-optimizer-png-compressor、fis-optimizer-uglify-js），其它没有的当然需要自己手动安装</p>
+<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><p>在 fis-conf.js 所在目录（即项目目录），直接通过 <code>fis3 server start</code> 即可<br><a href="/examples/ide/fis3/fis-conf.js">下载 fis-conf.js 配置示例</a></p>
+<h3 id="FIS3-命令"><a href="#FIS3-命令" class="headerlink" title="FIS3 命令"></a>FIS3 命令</h3><ul>
+<li>服务<br><code>fis3 server [start|stop|clean|open]</code> （启动|停止|清除发布夹内容|打开发布文件夹）</li>
+<li>预览<br><code>fis3 release -[w|wL|c]</code>  (监听文件变化|监听并自动刷新浏览器|清除编译缓存)</li>
+<li>发布<br><code>fis3 release -d [配置名] 输出路径</code></li>
+</ul>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="http://fis.baidu.com/fis3/docs/beginning/install.html" target="_blank" rel="external">FIS3: 安装</a></li>
+<li><a href="https://github.com/fex-team/jello" target="_blank" rel="external">jello</a></li>
+<li><a href="https://github.com/fex-team/fis3-jello" target="_blank" rel="external">fis3-jello</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      FIS3面向前端的工程构建工具的环境搭建
+    
+    </summary>
+    
+      <category term="IDE" scheme="http://cmin.me/categories/ide/"/>
+    
+    
+      <category term="FIS3" scheme="http://cmin.me/tags/fis3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebStorm 自动编译Less配置</title>
+    <link href="http://cmin.me/blog/2016-07/IDE/webstorm-compile-less/"/>
+    <id>http://cmin.me/blog/2016-07/IDE/webstorm-compile-less/</id>
+    <published>2016-07-02T12:35:00.000Z</published>
+    <updated>2018-01-31T04:07:34.414Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="首先需要通过-npm-安装-less"><a href="#首先需要通过-npm-安装-less" class="headerlink" title="首先需要通过 npm 安装 less"></a>首先需要通过 npm 安装 less</h3><p><code>npm install less -g</code>，当然前提是你要先安装NodeJS</p>
+<h3 id="IDE配置"><a href="#IDE配置" class="headerlink" title="IDE配置"></a>IDE配置</h3><p>C:\Users\Administrator\AppData\Roaming\npm\lessc.cmd<br><em>此路径是当前用户名下的</em></p>
+<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>file &gt; sttings &gt; File watchers &gt; 添加LESS watcher<br><img src="/images/blog/ide/webstorm.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      WebStorm 自动编译Less的配置
+    
+    </summary>
+    
+      <category term="IDE" scheme="http://cmin.me/categories/ide/"/>
+    
+    
+      <category term="WebStorm" scheme="http://cmin.me/tags/webstorm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML5和手机传感器</title>
+    <link href="http://cmin.me/blog/2016-05/JS/mobile-sensors/"/>
+    <id>http://cmin.me/blog/2016-05/JS/mobile-sensors/</id>
+    <published>2016-05-16T03:22:00.000Z</published>
+    <updated>2018-01-31T04:07:34.417Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>监听手机的设备方向传感器，转化为 <code>background-position</code> 的百分比。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.DeviceOrientationEvent &amp;&amp; <span class="built_in">window</span>.addEventListener(<span class="string">"deviceorientation"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</div><div class="line">    <span class="built_in">document</span>.body.style.backgroundPosition = inRange(event.gamma/<span class="number">.45</span>+<span class="number">50</span>,<span class="number">0</span>,<span class="number">100</span>)+<span class="string">'% '</span> + inRange((event.beta<span class="number">-45</span>)/<span class="number">.45</span>+<span class="number">50</span>,<span class="number">0</span>,<span class="number">100</span>)+<span class="string">'%'</span>;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">inRange</span>(<span class="params">res,min,max</span>)</span>&#123;</div><div class="line">    res = res&gt;max ? max : res;</div><div class="line">    res = res&lt;min ? min : res;</div><div class="line">    <span class="keyword">return</span> res;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      HTML5和手机传感器
+    
+    </summary>
+    
+      <category term="JS" scheme="http://cmin.me/categories/js/"/>
+    
+    
+      <category term="传感器" scheme="http://cmin.me/tags/%E4%BC%A0%E6%84%9F%E5%99%A8/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><title>Focus</title><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><link rel=stylesheet href=css/slider.css><style>h4 { padding-bottom:10px; font-family:"微软雅黑"; font-weight:normal; color:#666; line-height:20px;}
+.fs-wrap { width:100%; height:260px; margin-bottom:20px;}
+.fs-wrap:last-of-type { margin-bottom:0;}</style></head><body><h4>故乡的原风景：</h4><div class=fs-wrap id=slider1><div class=fs-img><a style=background-image:url(/images/blog/630-260/1.jpg)></a> <a style=background-image:url(/images/blog/630-260/2.jpg)></a> <a style=background-image:url(/images/blog/630-260/3.jpg)></a></div></div><div class=clear></div><h4>四川阆中：</h4><div class=fs-wrap id=slider2><div class=fs-img><a style=background-image:url(/images/blog/630-260/4.jpg)></a> <a style=background-image:url(/images/blog/630-260/5.jpg)></a> <a style=background-image:url(/images/blog/630-260/6.jpg)></a> <a style=background-image:url(/images/blog/630-260/7.jpg)></a></div></div><div class=clear></div><h4>美景：</h4><div class=fs-wrap id=slider3><div class=fs-img><a style="background-image:url(/images/blog/600-400/1.jpg); background-size:cover"></a> <a style="background-image:url(/images/blog/600-400/2.jpg); background-size:cover"></a> <a style="background-image:url(/images/blog/600-400/3.jpg); background-size:cover"></a></div></div><script src=/lib/jquery/index.js></script><script src=js/slider.js></script><script>$(function () {
+    $("#slider1").slider({
+        effect: "fade",
+        isDotNum: true,
+        isPNOpen: true,
+        callback: function () { //切换完成后回调
+            //console.log(this);
+        }
+    });
+
+    $("#slider2").slider({
+        effect: "slide",
+        isQuick: false,
+        isDotNum: true,
+        isPNOpen: false
+    });
+
+    $("#slider3").slider({
+        effect: "rect",
+        axis: "y",
+        isDotNum: true,
+        isPNOpen: false
+    });
+});</script></body></html>

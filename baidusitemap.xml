@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-05/jQuery/minutes-countdown/</loc>
+    <lastmod>2018-01-31T04:07:34.445Z</lastmod>
+    <data>
+        <display>
+        <title>分秒倒计时</title>
+        <pubTime>2016-05-10T12:10:00.000Z</pubTime>
+        
+        <tag>倒计时</tag>
+         
+         
+           
+             
+              <breadCrumb title="jQuery" url="http://cmin.me/categories/jquery/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/jQuery/PC-Slider/</loc>
+    <lastmod>2018-01-31T04:07:34.443Z</lastmod>
+    <data>
+        <display>
+        <title>Slider焦点图切换插件</title>
+        <pubTime>2015-01-06T03:36:00.000Z</pubTime>
+        
+        <tag>Slider</tag>
+         
+         
+           
+             
+              <breadCrumb title="jQuery" url="http://cmin.me/categories/jquery/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-06/JS/url-encoding-decoding/</loc>
+    <lastmod>2018-01-31T04:07:34.434Z</lastmod>
+    <data>
+        <display>
+        <title>URL编码、解码</title>
+        <pubTime>2015-06-09T02:30:00.000Z</pubTime>
+        
+        <tag>URL</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="http://cmin.me/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-03/JS/scroll-end-paging/</loc>
+    <lastmod>2018-01-31T04:07:34.433Z</lastmod>
+    <data>
+        <display>
+        <title>原生JS滚动到浏览器底部分页</title>
+        <pubTime>2016-03-05T13:00:00.000Z</pubTime>
+        
+        <tag>分页</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="http://cmin.me/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-03/JS/native-object-extend/</loc>
+    <lastmod>2018-01-31T04:07:34.431Z</lastmod>
+    <data>
+        <display>
+        <title>JS 对象合并</title>
+        <pubTime>2016-03-04T16:00:00.000Z</pubTime>
+        
+        <tag>对象</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="http://cmin.me/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-03/JS/native-class-operation/</loc>
+    <lastmod>2018-01-31T04:07:34.426Z</lastmod>
+    <data>
+        <display>
+        <title>JS实现addClass,removeClass,toggleClass</title>
+        <pubTime>2016-03-02T16:00:00.000Z</pubTime>
+        
+        <tag>Class</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="http://cmin.me/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-04/JS/native-ajax/</loc>
+    <lastmod>2018-01-31T04:07:34.418Z</lastmod>
+    <data>
+        <display>
+        <title>原生JS实现ajax的get、post</title>
+        <pubTime>2015-04-05T06:55:00.000Z</pubTime>
+        
+        <tag>Ajax</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="http://cmin.me/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-05/JS/mobile-sensors/</loc>
+    <lastmod>2018-01-31T04:07:34.417Z</lastmod>
+    <data>
+        <display>
+        <title>HTML5和手机传感器</title>
+        <pubTime>2016-05-16T03:22:00.000Z</pubTime>
+        
+        <tag>传感器</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="http://cmin.me/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-11/JS/get-server-time/</loc>
+    <lastmod>2018-01-31T04:07:34.416Z</lastmod>
+    <data>
+        <display>
+        <title>JS获取服务器时间</title>
+        <pubTime>2016-11-29T02:30:00.000Z</pubTime>
+        
+        <tag>时间</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="http://cmin.me/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-07/IDE/webstorm-compile-less/</loc>
+    <lastmod>2018-01-31T04:07:34.414Z</lastmod>
+    <data>
+        <display>
+        <title>WebStorm 自动编译Less配置</title>
+        <pubTime>2016-07-02T12:35:00.000Z</pubTime>
+        
+        <tag>WebStorm</tag>
+         
+         
+           
+             
+              <breadCrumb title="IDE" url="http://cmin.me/categories/ide/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-09/IDE/seajs-install/</loc>
+    <lastmod>2018-01-31T04:07:34.413Z</lastmod>
+    <data>
+        <display>
+        <title>seajs的安装使用</title>
+        <pubTime>2016-09-01T06:18:00.000Z</pubTime>
+        
+        <tag>Seajs</tag>
+         
+         
+           
+             
+              <breadCrumb title="IDE" url="http://cmin.me/categories/ide/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2017-03/IDE/package.json-dependencies/</loc>
+    <lastmod>2018-01-31T04:07:34.407Z</lastmod>
+    <data>
+        <display>
+        <title>Package.json 文件详解</title>
+        <pubTime>2017-03-20T16:00:00.000Z</pubTime>
+        
+        <tag>Package</tag>
+         
+         
+           
+             
+              <breadCrumb title="IDE" url="http://cmin.me/categories/ide/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-03/IDE/grunt-install/</loc>
+    <lastmod>2018-01-31T04:07:34.399Z</lastmod>
+    <data>
+        <display>
+        <title>Grunt 安装使用</title>
+        <pubTime>2016-03-30T08:30:00.000Z</pubTime>
+        
+        <tag>Grunt</tag>
+         
+         
+           
+             
+              <breadCrumb title="IDE" url="http://cmin.me/categories/ide/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-09/IDE/fis3-building/</loc>
+    <lastmod>2018-01-31T04:07:34.398Z</lastmod>
+    <data>
+        <display>
+        <title>FIS3 环境搭建</title>
+        <pubTime>2016-09-01T02:00:00.000Z</pubTime>
+        
+        <tag>FIS3</tag>
+         
+         
+           
+             
+              <breadCrumb title="IDE" url="http://cmin.me/categories/ide/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-09/IDE/about-pixels/</loc>
+    <lastmod>2018-01-31T04:07:34.392Z</lastmod>
+    <data>
+        <display>
+        <title>关于像素的一些概念</title>
+        <pubTime>2016-09-01T07:15:00.000Z</pubTime>
+        
+        <tag>像素</tag>
+         
+         
+           
+             
+              <breadCrumb title="IDE" url="http://cmin.me/categories/ide/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-02/HTML/web-performance/</loc>
+    <lastmod>2018-01-31T04:07:34.380Z</lastmod>
+    <data>
+        <display>
+        <title>提高Web页面性能的技巧</title>
+        <pubTime>2016-02-01T04:33:00.000Z</pubTime>
+        
+        <tag>技巧</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://cmin.me/categories/html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-03/HTML/wap-wml/</loc>
+    <lastmod>2018-01-31T04:07:34.379Z</lastmod>
+    <data>
+        <display>
+        <title>WAP、WML 学习手记</title>
+        <pubTime>2015-03-11T03:30:00.000Z</pubTime>
+        
+        <tag>WML</tag>
+         
+        <tag>WAP</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://cmin.me/categories/html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/HTML/meta-tag/</loc>
+    <lastmod>2018-01-31T04:07:34.370Z</lastmod>
+    <data>
+        <display>
+        <title>常用的 Meta 标签</title>
+        <pubTime>2015-01-14T04:55:00.000Z</pubTime>
+        
+        <tag>Meta</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://cmin.me/categories/html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-02/HTML/html-notes/</loc>
+    <lastmod>2018-01-31T04:07:34.368Z</lastmod>
+    <data>
+        <display>
+        <title>HTML 随手笔记</title>
+        <pubTime>2016-02-23T09:00:00.000Z</pubTime>
+        
+        <tag>笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://cmin.me/categories/html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/HTML/a-attr/</loc>
+    <lastmod>2018-01-31T04:07:34.363Z</lastmod>
+    <data>
+        <display>
+        <title>A标签的一些属性</title>
+        <pubTime>2015-01-14T16:00:00.000Z</pubTime>
+        
+        <tag>A标签</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://cmin.me/categories/html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/HTML/ZY-CMS-tag/</loc>
+    <lastmod>2018-01-31T04:07:34.362Z</lastmod>
+    <data>
+        <display>
+        <title>泽元CMS标签</title>
+        <pubTime>2015-01-05T02:10:00.000Z</pubTime>
+        
+        <tag>CMS</tag>
+         
+        <tag>笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTML" url="http://cmin.me/categories/html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-03/CSS/webkit-overflow-scrolling/</loc>
+    <lastmod>2018-01-31T04:07:34.360Z</lastmod>
+    <data>
+        <display>
+        <title>webkit-overflow-scrolling 属性</title>
+        <pubTime>2016-03-17T08:16:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2017-01/CSS/webkit-autofill/</loc>
+    <lastmod>2018-01-31T04:07:34.355Z</lastmod>
+    <data>
+        <display>
+        <title>去除chrome表单自动填充淡黄色背景</title>
+        <pubTime>2017-01-05T02:20:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/CSS/text-attributes/</loc>
+    <lastmod>2018-01-31T04:07:34.353Z</lastmod>
+    <data>
+        <display>
+        <title>CSS 文字相关属性</title>
+        <pubTime>2015-01-04T09:37:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/CSS/standard/</loc>
+    <lastmod>2018-01-31T04:07:34.339Z</lastmod>
+    <data>
+        <display>
+        <title>CSS 书写规范与顺序</title>
+        <pubTime>2015-01-15T04:30:00.000Z</pubTime>
+        
+        <tag>经验</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-03/CSS/sass-basic/</loc>
+    <lastmod>2018-01-31T04:07:34.338Z</lastmod>
+    <data>
+        <display>
+        <title>SASS入门</title>
+        <pubTime>2015-03-03T06:50:00.000Z</pubTime>
+        
+        <tag>SASS</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-02/CSS/pointer-events/</loc>
+    <lastmod>2018-01-31T04:07:34.328Z</lastmod>
+    <data>
+        <display>
+        <title>pointer-events属性</title>
+        <pubTime>2016-02-06T03:30:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-12/CSS/object-fit-position/</loc>
+    <lastmod>2018-01-31T04:07:34.316Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3 Object-fit和Object-position属性</title>
+        <pubTime>2015-12-09T08:54:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/CSS/media-query/</loc>
+    <lastmod>2018-01-31T04:07:34.309Z</lastmod>
+    <data>
+        <display>
+        <title>CSS @media 查询</title>
+        <pubTime>2015-01-04T08:50:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-03/CSS/hack/</loc>
+    <lastmod>2018-01-31T04:07:34.308Z</lastmod>
+    <data>
+        <display>
+        <title>CSS 一些常用hack</title>
+        <pubTime>2015-03-12T01:30:00.000Z</pubTime>
+        
+        <tag>HACK</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/CSS/favorite-css/</loc>
+    <lastmod>2018-01-31T04:07:34.307Z</lastmod>
+    <data>
+        <display>
+        <title>常用小样式集合</title>
+        <pubTime>2015-01-04T07:30:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2017-01/CSS/experience/</loc>
+    <lastmod>2018-01-31T04:07:34.306Z</lastmod>
+    <data>
+        <display>
+        <title>CSS日常经验杂谈</title>
+        <pubTime>2017-01-22T12:20:00.000Z</pubTime>
+        
+        <tag>CSS经验</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-05/CSS/em-unit/</loc>
+    <lastmod>2018-01-31T04:07:34.305Z</lastmod>
+    <data>
+        <display>
+        <title>CSS em单位弹性布局</title>
+        <pubTime>2015-05-04T09:20:00.000Z</pubTime>
+        
+        <tag>CSS单位</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2016-11/CSS/cursor/</loc>
+    <lastmod>2018-01-31T04:07:34.303Z</lastmod>
+    <data>
+        <display>
+        <title>CSS cursor属性值</title>
+        <pubTime>2016-11-23T04:47:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-03/CSS/css3-transition/</loc>
+    <lastmod>2018-01-31T04:07:34.302Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3 transition 相关属性</title>
+        <pubTime>2015-03-24T06:20:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-03/CSS/css3-transform/</loc>
+    <lastmod>2018-01-31T04:07:34.301Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3 transform 相关属性</title>
+        <pubTime>2015-03-25T08:00:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-11/CSS/css3-reflect/</loc>
+    <lastmod>2018-01-31T04:07:34.295Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3 box-reflect 倒影属性</title>
+        <pubTime>2015-11-08T07:40:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-02/CSS/css3-filter/</loc>
+    <lastmod>2018-01-31T04:07:34.269Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3 filter 详解</title>
+        <pubTime>2015-02-11T08:11:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-02/CSS/css3-appearance/</loc>
+    <lastmod>2018-01-31T04:07:34.261Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3 appearance 属性</title>
+        <pubTime>2015-02-12T02:30:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-03/CSS/css3-animation/</loc>
+    <lastmod>2018-01-31T04:07:34.259Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3 animation 相关属性</title>
+        <pubTime>2015-03-26T01:00:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-03/CSS/content/</loc>
+    <lastmod>2018-01-31T04:07:34.255Z</lastmod>
+    <data>
+        <display>
+        <title>CSS content、counter-increment、counter-reset详解</title>
+        <pubTime>2015-03-19T08:00:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-02/CSS/cheakbox-style/</loc>
+    <lastmod>2018-01-31T04:07:34.253Z</lastmod>
+    <data>
+        <display>
+        <title>CheakBox 开关效果</title>
+        <pubTime>2015-02-05T02:25:00.000Z</pubTime>
+        
+        <tag>Cheakbox</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/CSS/bg-mode/</loc>
+    <lastmod>2018-01-31T04:07:34.252Z</lastmod>
+    <data>
+        <display>
+        <title>CSS3 混合模式</title>
+        <pubTime>2015-01-04T09:00:00.000Z</pubTime>
+        
+        <tag>CSS属性</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cmin.me/blog/2015-01/CSS/Mobile-font-thinking/</loc>
+    <lastmod>2018-01-31T04:07:34.245Z</lastmod>
+    <data>
+        <display>
+        <title>移动端字体引入思考</title>
+        <pubTime>2015-01-04T08:50:00.000Z</pubTime>
+        
+        <tag>字体</tag>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://cmin.me/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+</urlset>
