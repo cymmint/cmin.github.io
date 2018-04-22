@@ -163,5 +163,4 @@ module.exports = function (grunt) {
         'imagemin',
         'htmlmin'
     ]);
-
 };
