@@ -4,7 +4,27 @@
 
     
   <url>
-    <loc>http://cymin.cn/blog/2018-09/JS/mobile-sensors/</loc>
+    <loc>http://cymin.cn/blog/2016-05/JS/mobile-sensors/</loc>
+    <lastmod>2018-09-10T01:41:18.710Z</lastmod>
+    <data>
+        <display>
+        <title>HTML5和手机传感器</title>
+        <pubTime>2016-05-16T03:22:00.000Z</pubTime>
+        
+        <tag>传感器</tag>
+         
+         
+           
+             
+              <breadCrumb title="JS" url="http://cymin.cn/categories/js/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://cymin.cn/blog/2018-09/JS/circular-motion/</loc>
     <lastmod>2018-09-09T02:48:28.037Z</lastmod>
     <data>
         <display>
@@ -433,9 +453,9 @@
         <title>泽元CMS标签</title>
         <pubTime>2015-01-05T02:10:00.000Z</pubTime>
         
-        <tag>笔记</tag>
-         
         <tag>CMS</tag>
+         
+        <tag>笔记</tag>
          
          
            
