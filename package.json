@@ -8,7 +8,7 @@
   "description": "摘星少年个人博客。",
   "license": "",
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.7.1"
   },
   "dependencies": {
     "autoprefixer": "^6.6.1",
